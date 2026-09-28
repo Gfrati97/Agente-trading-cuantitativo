@@ -1,0 +1,35 @@
+# Datos locales: solo conservar el marcador de carpeta
+/data/**
+!/data/.gitkeep
+
+# Datasets también fuera de data/ (incluidas variantes comprimidas)
+*.[cC][sS][vV]
+*.[cC][sS][vV].*
+*.[pP][aA][rR][qQ][uU][eE][tT]
+*.[pP][aA][rR][qQ][uU][eE][tT].*
+
+# Modelos serializados, también en subdirectorios
+*.[pP][kK][lL]
+*.[pP][kK][lL].*
+*.pickle
+*.pickle.*
+*.[jJ][oO][bB][lL][iI][bB]
+*.[jJ][oO][bB][lL][iI][bB].*
+
+# Python y Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.pytest_cache/
+
+# Configuración local y credenciales
+.env
+.env.*
+!.env.example
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+Desktop.ini
